@@ -19,3 +19,7 @@ jegyvásárlások kezelésére szolgál.
 - Felhasználóbarát, ergonomikus elrendezés és kinézet.
 - Gyors működés.
 - Biztonságos működés (admin számára): jelszavak tárolása, funkciókhoz való hozzáférés (minden oldal elején be van-e jelentkezve, jogosultság ellenőrzés).
+
+## Szerepkörök:
+- Frontend (Fruzsina, Fanni)
+- Backend (Fruzsina, Fanni)
