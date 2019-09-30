@@ -1,17 +1,16 @@
-# Alkalmazások fejlesztése feladat - Mozis alkalmazás készítése - Kámán Fruzsina és Kálmán Fanni
+# Alkalmazások fejlesztése feladat - Kézilabda alkalmazás készítése - Kámán Fruzsina és Kálmán Fanni
 
 ## Feladat: 
-Mozi üzemeltető rendszert készítése, amely alkalmazás az előadások, illetve
-jegyvásárlások kezelésére szolgál.
+Kézilabdás rendszert készítése, amely alkalmazás a meccsek, csapatok, illetve jegyvásárlások kezelésére szolgál. A nézők lekérhetik az adott csapat meccsnapjait és, hogy milyen meccsek vannak az adott napon. Jegyet is vásárolhatnak a stadionba, hogy elkerüljék a helyszínen a sorbanállást.
 
 ## Funkcionális követelmények:
-- film kilistázása 
-- nap/heti filmek kilistázása
-- keresés: filmcím, kulcsszó, szereplő, stílus szerint
-- film adatainak kilistázása (tulajdonságok: mennyi idő, milyen nyelv, cím, szereplők)
-- összes előadás időpontja 
-- jegy megvásárlás (név, telefon, e-mail cím, film, hány darab jegyet szeretne venni)
-- admin felület funkciói: új film felvétele (mi van benne), filmhez új előadási nap felvétele, törlés, módosítás
+- csapatok és adataninak kilistázása (edző, segédedző, stábtagok, játékosok-koruk, posztjuk, milyen kezesek)
+- nap/heti meccsek kilistázása
+- A keresés: csapatnév, játékos, edző, pálya és időpont szerint történhet.
+- Meccs adatainak kilistázása (tulajdonságok: kezdés időpontja, csapatok névsora, játékosok, edzők, játékvezetők)
+- összes meccs időpontja 
+- jegy megvásárlás (név, telefon, e-mail cím, meccs, hány darab jegyet szeretne venni, melyik stadionba)
+- admin felület funkciói: új meccs felvétele, új csapat felvétele, csapathoz új meccsnap felvétele, törlése, módosítása
 - látogató felület funkciói: keresés, kilistázás, jegyvásárlás
 
 
