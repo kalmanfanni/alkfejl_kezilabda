@@ -9,7 +9,7 @@ Kézilabdás rendszert készítése, amely alkalmazás a meccsek, csapatok, ille
 - A keresés: csapatnév, játékos, edző, pálya és időpont szerint történhet.
 - Meccs adatainak kilistázása (tulajdonságok: kezdés időpontja, csapatok névsora, játékosok, edzők, játékvezetők)
 - összes meccs időpontja 
-- jegy megvásárlás (név, telefon, e-mail cím, meccs, hány darab jegyet szeretne venni, melyik stadionba)
+- jegy megvásárlás (név, telefon, e-mail cím, meccs, hány darab jegyet szeretne venni)
 - admin felület funkciói: új meccs felvétele, új csapat felvétele, csapathoz új meccsnap felvétele, törlése, módosítása
 - látogató felület funkciói: keresés, kilistázás, jegyvásárlás
 
