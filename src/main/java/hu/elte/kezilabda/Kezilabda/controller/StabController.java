@@ -4,9 +4,8 @@ package hu.elte.kezilabda.Kezilabda.controller;
 import hu.elte.kezilabda.Kezilabda.model.Stab;
 import hu.elte.kezilabda.Kezilabda.repository.StabRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/stab")
@@ -17,5 +16,12 @@ public class StabController {
     @GetMapping("")
     public Iterable<Stab> getStab() {
         return stabRepository.findAll();
+    }
+
+    @PostMapping("")
+    public ResponseEntity<Stab> letrehozStab(@RequestBody Stab stab)
+    {
+        Stab savedStab = stabRepository.save(stab);
+        return ResponseEntity.ok(savedStab);
     }
 }

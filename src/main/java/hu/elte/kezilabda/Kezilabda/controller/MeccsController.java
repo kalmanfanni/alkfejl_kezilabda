@@ -2,9 +2,8 @@ package hu.elte.kezilabda.Kezilabda.controller;
 import hu.elte.kezilabda.Kezilabda.model.Meccs;
 import hu.elte.kezilabda.Kezilabda.repository.MeccsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/meccs")
@@ -17,5 +16,12 @@ public class MeccsController
     @GetMapping("")
     public Iterable<Meccs> getMeccs() {
         return meccsRepository.findAll();
+    }
+
+    @PostMapping("")
+    public ResponseEntity<Meccs> letrehozMeccs(@RequestBody Meccs meccs)
+    {
+        Meccs savedMeccs = meccsRepository.save(meccs);
+        return ResponseEntity.ok(savedMeccs);
     }
 }

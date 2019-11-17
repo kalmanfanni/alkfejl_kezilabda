@@ -20,4 +20,6 @@ public class UgyintezoControll
     public Iterable<Ugyintezo> getUgyintezo() {
         return ugyintezoRepository.findAll();
     }
+
+
 }

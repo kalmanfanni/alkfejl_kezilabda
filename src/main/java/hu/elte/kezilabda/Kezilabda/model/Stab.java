@@ -27,11 +27,13 @@ public class Stab
     @Column
     @NotNull
     @Enumerated(EnumType.STRING)
-    private Status status;
+    private Stab.Status status;
 
     public enum Status {
-        EDZO, SEGEDEDZO, GYURO, ORVOS, KAPUSEDZO
+        VEZETOEDZO, SEGEDEDZO, GYURO, ORVOS, KAPUSEDZO
     }
+
+
 
     @JsonIgnore
     @ManyToOne

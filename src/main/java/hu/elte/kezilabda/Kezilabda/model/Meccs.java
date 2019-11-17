@@ -8,6 +8,8 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.sql.Time;
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -22,10 +24,16 @@ public class Meccs
     private Integer id;
 
     @Column
-    private Integer nap;
+    private Date nap;
 
     @Column
-    private Integer kezdes_ido;
+    private Time kezdes_ido;
+
+    @Column
+    private Integer hazai_eredmeny;
+
+    @Column
+    private Integer vendeg_eredmeny;
 
     @JsonIgnore
     @ManyToOne
@@ -34,6 +42,7 @@ public class Meccs
     @JsonIgnore
     @ManyToOne
     private Csapat vendeg;
+
 
     @JsonIgnore
     @ManyToOne
