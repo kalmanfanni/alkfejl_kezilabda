@@ -3,6 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatSelectModule} from '@angular/material/select';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+//import { HeaderInterceptor } from './header-interceptor';
 
 import { MatToolbarModule, MatIconModule, MatButtonModule } from '@angular/material';
 import { KezdolapComponent } from './kezdolap/kezdolap.component';
@@ -15,7 +21,7 @@ import { MeccsekKezeleseComponent } from './meccsek-kezelese/meccsek-kezelese.co
 @NgModule({
   declarations: [
     AppComponent,
-    KezdolapComponent,,
+    KezdolapComponent,
     JatekosokKezeleseComponent,
     CsapatokKezeleseComponent,
     JegyvasarlasComponent,
@@ -24,12 +30,18 @@ import { MeccsekKezeleseComponent } from './meccsek-kezelese/meccsek-kezelese.co
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
+    MatInputModule,
     RoutingModule,
+    MatButtonToggleModule,
+    MatSelectModule,
+    FormsModule,
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
