@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { JegyvasarlasComponent } from '../jegyvasarlas/jegyvasarlas.component';
 import { JatekosokKezeleseComponent } from '../jatekosok-kezelese/jatekosok-kezelese.component';
 import { CsapatokKezeleseComponent } from '../csapatok-kezelese/csapatok-kezelese.component';
+import { MeccsekKezeleseComponent } from '../meccsek-kezelese/meccsek-kezelese.component';
 import { KezdolapComponent } from '../kezdolap/kezdolap.component';
 
 const routes: Routes = [
@@ -17,7 +18,7 @@ const routes: Routes = [
     component: KezdolapComponent
   },
   {
-    path: 'csapat_kezelese',
+    path: 'csapatok_kezelese',
     component: CsapatokKezeleseComponent
   },
   {
@@ -30,7 +31,7 @@ const routes: Routes = [
   },
   {
     path: 'meccsek_kezelese',
-    component: JatekosokKezeleseComponent
+    component: MeccsekKezeleseComponent
   },
   {
     path: '**',

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Csapat } from '../domain/csapat';
+import { CsapatService } from '../csapat.service';
 
 @Component({
   selector: 'app-csapatok-kezelese',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CsapatokKezeleseComponent implements OnInit {
 
-  constructor() { }
+  csapat : Csapat;
+
+  constructor(
+    public csapatService: CsapatService
+  ) { }
 
   ngOnInit() {
+    this.csapatService.getCsapatok();
   }
 
 }

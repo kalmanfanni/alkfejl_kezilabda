@@ -8,7 +8,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatSelectModule} from '@angular/material/select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-//import { HeaderInterceptor } from './header-interceptor';
+import { HeaderInterceptor } from './header-interceptor';
 
 import { MatToolbarModule, MatIconModule, MatButtonModule } from '@angular/material';
 import { KezdolapComponent } from './kezdolap/kezdolap.component';
@@ -41,6 +41,9 @@ import { MeccsekKezeleseComponent } from './meccsek-kezelese/meccsek-kezelese.co
     FormsModule,
   ],
   providers: [
+    {provide: HTTP_INTERCEPTORS,
+    useClass: HeaderInterceptor,
+    multi: true}
   ],
   bootstrap: [AppComponent]
 })

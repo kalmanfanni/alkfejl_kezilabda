@@ -1,1 +1,55 @@
-<p>csapatok-kezelese works!</p>
+<!--
+<div>
+    <div>
+        <span>Csapat neve:</span>
+        
+    </div>
+    <div>
+        <span>Helyszin:</span>
+       
+    </div>
+    <div>
+        <span>Cím:</span>
+  
+    </div>
+
+    Férőhely
+    <div>
+        <button
+            mat-raised-button
+            color="primary"
+    
+    
+        >Edit</button>
+    </div>
+
+</div>-->
+
+<div>
+    <h1>Csapatok kezelése</h1>
+    {{csapatService.filteredCsapatok.length}}
+    <table>
+
+        <thead>
+            <tr>
+                <th>Név</th>
+                <th>Pálya név</th>
+                <th>Cím</th>
+                <th>Férőhely</th>
+            </tr>
+        </thead>
+        <tbody>
+
+                <tr
+                    *ngFor="let csapat of csapatService.filteredCsapatok"
+                    [routerLink]="['/', 'csapatok', csapat.id]"
+                >
+                    <td>{{ csapat.nev }}</td>
+                    <td>{{ csapat.palya_nev }}</td>
+                    <td>{{ csapat.cim }}</td>
+                    <td>{{ csapat.ferohely }}</td>
+                </tr>
+                
+        </tbody>
+    </table>
+</div>
