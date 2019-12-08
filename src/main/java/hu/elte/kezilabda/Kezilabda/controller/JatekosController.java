@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/jatekos")
+@CrossOrigin(origins = "*")
 public class JatekosController {
     @Autowired
     private JatekosRepository jatekosRepository;

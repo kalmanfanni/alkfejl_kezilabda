@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/stab")
+@CrossOrigin(origins = "*")
 public class StabController {
     @Autowired
     private StabRepository stabRepository;
