@@ -3,7 +3,7 @@ package hu.elte.kezilabda.Kezilabda.controller;
 
 import hu.elte.kezilabda.Kezilabda.model.Vasarlo;
 import hu.elte.kezilabda.Kezilabda.repository.VasarloRepository;
-import hu.elte.kezilabda.Kezilabda.security.AuthenticatedVasarlo;
+//import hu.elte.kezilabda.Kezilabda.security.AuthenticatedVasarlo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
