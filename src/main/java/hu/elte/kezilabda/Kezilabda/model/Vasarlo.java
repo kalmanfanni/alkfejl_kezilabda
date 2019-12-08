@@ -26,7 +26,7 @@ public class Vasarlo
     @Column
     private String nev;
 
-    @Column(nullable = false)
+    /*@Column(nullable = false)
     @JsonProperty(access = WRITE_ONLY)
     private String username;
 
@@ -40,7 +40,7 @@ public class Vasarlo
 
     public enum Role {
         ROLE_USER//, ROLE_ADMIN
-    }
+    }*/
 
     @Column
     private String email;
@@ -52,7 +52,7 @@ public class Vasarlo
     @OneToMany(mappedBy = "vasarlo")
     private List<Vasarlas> vasarlasok;
 
-    public String getUsername() {
+    /*public String getUsername() {
         return username;
     }
 
@@ -70,5 +70,5 @@ public class Vasarlo
 
     public Role getRole() {
         return role;
-    }
+    }*/
 }
