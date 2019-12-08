@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Meccs } from '../domain/meccs';
+import { MeccsService } from '../meccs.service';
+
 
 @Component({
   selector: 'app-meccsek-kezelese',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MeccsekKezeleseComponent implements OnInit {
 
-  constructor() { }
+  meccs : Meccs;
+  constructor(
+    public meccsService: MeccsService
+  ) { }
 
   ngOnInit() {
+    this.meccsService.getMeccsek();
   }
+
 
 }

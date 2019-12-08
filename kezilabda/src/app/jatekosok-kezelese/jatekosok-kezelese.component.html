@@ -1,1 +1,29 @@
-<p>jatekosok-kezelese works!</p>
+<div>
+    <h1>Játékosok kezelése</h1>
+    {{jatekosService.filteredJatekosok.length}}
+    <table>
+
+        <thead>
+            <tr>
+                <th>Név</th>
+                <th>Mezszám</th>
+                <th>Születési idő</th>
+                <th>Poszt</th>
+            </tr>
+        </thead>
+        <tbody>
+
+                <tr
+                    *ngFor="let jatekos of jatekosService.filteredJatekosok"
+                    [routerLink]="['/', 'jatekosok', jatekos.id]"
+                >
+                    <td>{{ jatekos.nev}}</td>
+                    <td>{{ jatekos.mezszam }}</td>
+                    <td>{{ jatekos.szuletesi_ido }}</td>
+                    <td>{{ jatekos.poszt }}</td>
+                </tr>
+                
+        </tbody>
+    </table>
+</div>
+

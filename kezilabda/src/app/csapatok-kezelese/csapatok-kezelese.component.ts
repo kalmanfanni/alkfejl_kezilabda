@@ -10,7 +10,6 @@ import { CsapatService } from '../csapat.service';
 export class CsapatokKezeleseComponent implements OnInit {
 
   csapat : Csapat;
-
   constructor(
     public csapatService: CsapatService
   ) { }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Jatekos } from '../domain/jatekos';
+import { JatekosService } from '../jatekos.service';
 
 @Component({
   selector: 'app-jatekosok-kezelese',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JatekosokKezeleseComponent implements OnInit {
 
-  constructor() { }
+  jatekos : Jatekos;
+  constructor(
+    public jatekosService: JatekosService
+  ) { }
 
   ngOnInit() {
+    this.jatekosService.getJatekosok();
   }
+
 
 }

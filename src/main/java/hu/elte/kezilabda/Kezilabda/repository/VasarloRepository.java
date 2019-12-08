@@ -10,5 +10,5 @@ import java.util.Optional;
 
 @Repository
 public interface VasarloRepository extends CrudRepository<Vasarlo, Integer> {
-    Optional<Vasarlo> findByUsername(String username);
+    //Optional<Vasarlo> findByUsername(String username);
 }

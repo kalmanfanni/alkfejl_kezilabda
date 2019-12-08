@@ -1,17 +1,28 @@
 <div>
     <h1>Meccsek kezelése</h1>
+    <!--{{meccsService.filteredMeccsek.length}}-->
     <table>
+
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Place</th>
-                <th>Status</th>
+                <th>Nap</th>
+                <th>Kezdési idő</th>
+                <th>Hazai eredmeny</th>
+                <th>Vendeg eredmeny</th>
             </tr>
         </thead>
         <tbody>
 
-          
-
+                <tr
+                    *ngFor="let meccs of meccsService.filteredMeccsek"
+                    [routerLink]="['/', 'meccsek', meccs.nap]"
+                >
+                    <td>{{ meccs.nap }}</td>
+                    <td>{{ meccs.kezdes_ido }}</td>
+                    <td>{{ meccs.hazai_eredmeny }}</td>
+                    <td>{{ meccs.vendeg_eredmeny }}</td>
+                </tr>
+                
         </tbody>
     </table>
 </div>
