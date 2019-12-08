@@ -15,31 +15,29 @@ import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 
-public class MyUserDetailsService {
 
-    /*@Service
-    public class MyUserDetailsService implements UserDetailsService {
+@Service
+public class MyUserDetailsService implements UserDetailsService {
 
-        @Autowired
-        private AuthenticatedVasarlo authenticatedVasarlo;
+    @Autowired
+    private AuthenticatedVasarlo authenticatedVasarlo;
 
-        @Autowired
-        private VasarloRepository vasarloRepository;
+    @Autowired
+    private VasarloRepository vasarloRepository;
 
-        @Override
-        @Transactional(readOnly = true)
-        public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-            Optional<Vasarlo> oVasarlo = vasarloRepository.findByUsername(username);
-            if (!oVasarlo.isPresent()) {
-                throw new UsernameNotFoundException(username);
-            }
-            Vasarlo vasarlo = oVasarlo.get();
-            authenticatedVasarlo.setVasarlo(vasarlo);
-            Set<GrantedAuthority> grantedAuthorities = new HashSet<>();
-            grantedAuthorities.add(new SimpleGrantedAuthority(vasarlo.getRole().toString()));
-
-            return new org.springframework.security.core.userdetails.User(user.getUsername(), user.getPassword(), grantedAuthorities);
+    @Override
+    @Transactional(readOnly = true)
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        Optional<Vasarlo> oVasarlo = vasarloRepository.findByUsername(username);
+        if (!oVasarlo.isPresent()) {
+            throw new UsernameNotFoundException(username);
         }
-    }*/
+        Vasarlo vasarlo = oVasarlo.get();
+        authenticatedVasarlo.setVasarlo(vasarlo);
+        Set<GrantedAuthority> grantedAuthorities = new HashSet<>();
+        grantedAuthorities.add(new SimpleGrantedAuthority(vasarlo.getRole().toString()));
 
+        return new org.springframework.security.core.userdetails.User(vasarlo.getUsername(), vasarlo.getPassword(), grantedAuthorities);
+    }
 }
+

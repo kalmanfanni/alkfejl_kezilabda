@@ -14,4 +14,8 @@ import org.springframework.web.context.annotation.RequestScope;
 @NoArgsConstructor
 public class AuthenticatedVasarlo {
     private Vasarlo vasarlo;
+
+    public void setVasarlo(Vasarlo vasarlo) {
+        this.vasarlo = vasarlo;
+    }
 }

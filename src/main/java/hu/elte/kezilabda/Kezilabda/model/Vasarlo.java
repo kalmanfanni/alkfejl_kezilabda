@@ -51,4 +51,16 @@ public class Vasarlo
     @JsonIgnore
     @OneToMany(mappedBy = "vasarlo")
     private List<Vasarlas> vasarlasok;
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public Role getRole() {
+        return role;
+    }
 }
