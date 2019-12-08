@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Jatekos } from '../domain/jatekos';
 import { JatekosService } from '../jatekos.service';
 
+
 @Component({
   selector: 'app-jatekosok-kezelese',
   templateUrl: './jatekosok-kezelese.component.html',

@@ -28,3 +28,4 @@ public class JatekosController {
         return ResponseEntity.ok(savedJatekos);
     }
 }
+

@@ -7,7 +7,7 @@ INSERT INTO csapat (nev, palya_nev, cim, ferohely) VALUES ('Tatabanya Sportklub'
 INSERT INTO jatekos(nev, mezszam, szuletesi_ido, poszt) VALUES ('Sterbik Arpad', 1 , '1979-11-22', 'KAPUS' );
 INSERT INTO jatekos(nev, mezszam, szuletesi_ido, poszt) VALUES ('Lekai Mate', 66, '1988-06-16', 'IRANYITO' );
 INSERT INTO jatekos(nev, mezszam, szuletesi_ido, poszt) VALUES ('Petar Nenadic', 34, '1986-06-28', 'IRANYITO' );
-INSERT INTO jatekos(nev, mezszam, szuletesi_ido, poszt) VALUES ('Andreas Nilsson', 18, '1990-04-20', 'BEALLOS' );
+INSERT INTO jatekos(nev, mezszam, szuletesi_ido, poszt) VALUES ('Andreas Nilsson', 18, '1990-04-20', 'BEALLO' );
 
 INSERT INTO stab(nev, status) VALUES ('David Davis', 'VEZETOEDZO' );
 INSERT INTO stab(nev, status) VALUES ('Carlos Perez', 'SEGEDEDZO' );
