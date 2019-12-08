@@ -18,4 +18,8 @@ public class AuthenticatedVasarlo {
     public void setVasarlo(Vasarlo vasarlo) {
         this.vasarlo = vasarlo;
     }
+
+    public Vasarlo getVasarlo() {
+        return vasarlo;
+    }
 }
