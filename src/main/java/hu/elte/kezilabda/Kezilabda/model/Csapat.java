@@ -51,5 +51,8 @@ public class Csapat
     @OneToMany(mappedBy = "vendeg")
     private List<Meccs> vendegMeccs;
 
+    public void subFerohely(Integer db){
+        this.ferohely -= db;
+    }
 
 }
