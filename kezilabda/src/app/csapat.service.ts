@@ -29,6 +29,10 @@ export class CsapatService {
     this.filteredCsapatok = this.csapatok = csapatok.map(this.createCsapatModel);
   }
 
+  async createCsapat(csapat: Csapat): Promise<any> {
+    await this.http.post('csapatok', csapat).toPromise();
+  }
+
   /*async getIssue(issueId: number): Promise<Issue> {
     const issue = await (this.http.get(`issues/${issueId}`)
       .toPromise() as Promise<any>);
