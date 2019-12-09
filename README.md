@@ -24,4 +24,4 @@ Kézilabdás rendszert készítése, amely alkalmazás a meccsek, csapatok, ille
 - Backend (Fruzsina, Fanni)
 
 ## Egyed-kapcsolat diagram:
-![Entity-relationship diagram](images/Entity_diagram.png)
+![Entity-relationship diagram](images/Entity_diagram.PNG)
