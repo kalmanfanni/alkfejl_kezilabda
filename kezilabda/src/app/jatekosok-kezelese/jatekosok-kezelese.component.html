@@ -12,7 +12,9 @@
             </tr>
         </thead>
         <tbody>
-
+            <ng-container
+            *ngIf="jatekosService.filteredJatekosok.length > 0"
+            >
                 <tr
                     *ngFor="let jatekos of jatekosService.filteredJatekosok"
                     [routerLink]="['/', 'jatekosok', jatekos.id]"
@@ -23,6 +25,14 @@
                     <td>{{ jatekos.szuletesi_ido }}</td>
                     <td>{{ jatekos.poszt }}</td>
                 </tr>
+            </ng-container>
+            <tr
+                *ngIf="jatekosService.filteredJatekosok.length === 0"
+            >
+                <td
+                    colspan="3"
+                >Nincs játékos</td>
+            </tr>
                 
         </tbody>
     </table>

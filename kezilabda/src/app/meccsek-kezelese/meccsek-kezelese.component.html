@@ -12,7 +12,9 @@
             </tr>
         </thead>
         <tbody>
-
+            <ng-container
+                *ngIf="meccsService.filteredMeccsek.length > 0"
+            >
                 <tr
                     *ngFor="let meccs of meccsService.filteredMeccsek"
                     [routerLink]="['/', 'meccsek', meccs.nap]"
@@ -22,6 +24,14 @@
                     <td>{{ meccs.hazai_eredmeny }}</td>
                     <td>{{ meccs.vendeg_eredmeny }}</td>
                 </tr>
+            </ng-container>
+            <tr
+                *ngIf="meccsService.filteredMeccsek.length === 0"
+            >
+                <td
+                    colspan="3"
+                >Nincs játékos</td>
+            </tr>
                 
         </tbody>
     </table>

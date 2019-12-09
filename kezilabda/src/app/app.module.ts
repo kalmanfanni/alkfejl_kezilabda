@@ -18,6 +18,7 @@ import { JegyvasarlasComponent } from './jegyvasarlas/jegyvasarlas.component';
 import { RoutingModule } from './routing/routing.module';
 import { MeccsekKezeleseComponent } from './meccsek-kezelese/meccsek-kezelese.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +27,7 @@ import { MeccsekKezeleseComponent } from './meccsek-kezelese/meccsek-kezelese.co
     CsapatokKezeleseComponent,
     JegyvasarlasComponent,
     MeccsekKezeleseComponent,
+  
   ],
   imports: [
     BrowserModule,
