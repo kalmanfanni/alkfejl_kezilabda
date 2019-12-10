@@ -22,3 +22,6 @@ Kézilabdás rendszert készítése, amely alkalmazás a meccsek, csapatok, ille
 ## Szerepkörök:
 - Frontend (Fruzsina, Fanni)
 - Backend (Fruzsina, Fanni)
+
+## Egyed-kapcsolat diagram:
+![Entity-relationship diagram](images/Entity_diagram.PNG)
