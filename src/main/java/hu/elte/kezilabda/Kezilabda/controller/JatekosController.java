@@ -27,5 +27,17 @@ public class JatekosController {
         Jatekos savedJatekos = jatekosRepository.save(jatekos);
         return ResponseEntity.ok(savedJatekos);
     }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity deleteIssue(
+            @PathVariable Integer id
+    ) {
+        try {
+            jatekosRepository.deleteById(id);
+            return ResponseEntity.ok().build();
+        } catch (Exception e) {
+            return ResponseEntity.notFound().build();
+        }
+    }
 }
 

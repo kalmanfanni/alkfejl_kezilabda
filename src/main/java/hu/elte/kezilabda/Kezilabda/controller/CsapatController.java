@@ -29,4 +29,15 @@ public class CsapatController
         Csapat savedCsapat = csapatRepository.save(csapat);
         return ResponseEntity.ok(savedCsapat);
     }
+    @DeleteMapping("/{id}")
+    public ResponseEntity deleteCsapat(
+            @PathVariable Integer id
+    ) {
+        try {
+            csapatRepository.deleteById(id);
+            return ResponseEntity.ok().build();
+        } catch (Exception e) {
+            return ResponseEntity.notFound().build();
+        }
+    }
 }
