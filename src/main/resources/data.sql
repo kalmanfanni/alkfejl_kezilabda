@@ -52,6 +52,8 @@ INSERT INTO stab(nev, status) VALUES ('Dr. Dergez Maria','ORVOS' );
 INSERT INTO stab(nev, status) VALUES ('Szabo Imre','KAPUSEDZO' );
 
 INSERT INTO meccs(nap, kezdes_ido) VALUES ('2019-11-17', '16:30');
+INSERT INTO meccs(nap, kezdes_ido, hazai_eredmeny, vendeg_eredmeny) VALUES ('2019-11-19', '18:30', 30, 26);
+INSERT INTO meccs(nap, kezdes_ido, hazai_eredmeny, vendeg_eredmeny) VALUES ('2019-12-19', '17:30', 31, 19);
 
 
 
