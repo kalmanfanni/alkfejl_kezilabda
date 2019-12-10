@@ -28,3 +28,6 @@ Kézilabdás rendszert készítése, amely alkalmazás a meccsek, csapatok, ille
 
 ## Modell osztálydiagram:
 ![Model class diagram](images/model_class_diagram.PNG)
+
+## Controller osztálydiagram:
+![Controller class diagram](images/controller_class_diagram.PNG)
