@@ -25,3 +25,6 @@ Kézilabdás rendszert készítése, amely alkalmazás a meccsek, csapatok, ille
 
 ## Egyed-kapcsolat diagram:
 ![Entity-relationship diagram](images/Entity_diagram.PNG)
+
+## Modell osztálydiagram:
+![Model class diagram](images/model_class_diagram.PNG)
